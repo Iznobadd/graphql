@@ -1,4 +1,3 @@
-import { mergeResolvers } from "@graphql-tools/merge";
-import wilderResolver from "./wilder.resolver";
+import WilderResolver from "./wilder.resolver";
 
-export default mergeResolvers([wilderResolver]);
+export { WilderResolver };
