@@ -1,0 +1,21 @@
+type Wilder {
+  id: Int
+  firstName: String
+  lastName: String
+  age: Int
+  notes: [Note]
+}
+
+type Query {
+  listWilders: [Wilder]
+}
+
+type Mutation {
+  addWilder(createWilderInput: CreateWilderInput!): Wilder
+}
+
+input CreateWilderInput {
+  firstName: String!
+  lastName: String!
+  age: Int!
+}
